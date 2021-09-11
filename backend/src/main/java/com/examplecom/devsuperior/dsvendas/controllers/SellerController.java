@@ -1,4 +1,4 @@
-package com.examplecom.devsuperior.dsvendas.controllers;
+package  com.examplecom.devsuperior.dsvendas.controllers ;
 
 import java.util.List;
 
@@ -14,10 +14,10 @@ import com.examplecom.devsuperior.dsvendas.sevice.SellerService;
 @RestController
 @RequestMapping(value = "/sellers")
 public class SellerController {
-	
+
 	@Autowired
 	private SellerService service;
-	
+
 	@GetMapping
 	public ResponseEntity<List<SellerDTO>> findALL() {
 		List<SellerDTO> list = service.findAll();
